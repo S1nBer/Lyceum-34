@@ -1,0 +1,124 @@
+.navbar {
+   background-color: rgba(60, 54, 100, 1);
+   position: absolute;
+   width: 11920px;
+   height: 136px;
+   left: 0px;
+   top: -2px;
+}
+
+.logo{
+   position: absolute;
+   width: 130px;
+   height: 118px;
+   left: 40px;
+   top: 10px;
+}
+
+.news{
+   position: absolute;
+   width: 78px;
+   height: 29px;
+   left: 210px;
+   top: 63px;
+}
+
+.use_inf{
+   position: absolute;
+   width: 232px;
+   height: 29px;
+   left: 318px;
+   top: 63px;
+}
+
+#sections{
+   font-family: Istok Web;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 20px;
+   line-height: 29px;
+   color: white;
+}
+
+#arrow{
+   position: absolute;
+   width: 17px;
+   height: 7.46px;
+   top: 15px;
+}
+
+.educ_process{
+   position: absolute;
+   width: 183px;
+   height: 29px;
+   left: 580px;
+   top: 63px;
+}
+
+.ped_team{
+   position: absolute;
+   width: 130px;
+   height: 32.77px;
+   left: 793px;
+   top: 63px
+}
+
+.el_diary{
+   position: absolute;
+   width: 130px;
+   height: 32.77px;
+   left: 953px;
+   top: 49px;
+}
+
+.version{
+   position: absolute;
+   width: 295px;
+   height: 109.44px;
+   left: 1114px;
+   top: 13.5px;
+   background-color: rgba(60, 54, 100, 1);
+   border-color: white;
+   border-width: 8px;
+}
+
+.eye{
+   width: 98px;
+   height: 50px;
+
+}
+
+.stick{
+   width: 3px;
+   height: 80px;
+   background-color: white;
+}
+
+.Version{
+   font-family: Istok Web;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 20px;
+   line-height: 29px;
+   text-align: center;
+   color: #F0F0F0;
+   width: 142px;
+   height: 55px;
+}
+
+table{
+   width: 100%;
+}
+
+#col1{
+width: 45%;
+}
+
+#col2{
+   width: 10%;
+}
+
+#col3{
+   width: 45%;
+}
+
