@@ -9,35 +9,64 @@
 </head>
 <body>
    <div class="navbar">
-      <img class="logo" src="img/logo.png" alt="Логотип Лицея">
-      <a class="news" id="sections" href="">Новости</a>
-      <div class="use_inf">
+      <table class="header">
+      <td id="col1"><img class="logo" src="img/logo.png" alt="Логотип Лицея"></td>
+      <td id="col2"><a class="news" id="sections" href="">Новости</a></td>
+      <td id="col3"><div class="use_inf">
          <a id="sections" href="">Полезная информация</a>
          <img id="arrow" src="img/arrow down.png">
-      </div>
-      <div class="educ_process">
+      </div></td>
+      <td id="col4"><div class="educ_process">
          <a id="sections" href="">Учебный процесс</a>
          <img id="arrow" src="img/arrow down.png">
-      </div>
-      <div class="ped_team">
+      </div></td>
+      <td id="col5"><div class="ped_team">
          <a id="sections" href="">Педколлектив</a>
-      </div>
-      <div class="el_diary">
+      </div></td>
+      <td id="col6"><div class="el_diary">
          <a id="sections" href="">Электронный дневник</a>
-      </div>
-      <div class="button">
+      </div></td>
+      <td id="col7"><div class="button">
          <button class="version">
-            <table>
+            <table class="button">
             <tr>
-               <td id="col1"><img class="eye" src="img/eye.png"></td>
-               <td id="col2"><div class="stick"></div></td>
-               <td id="col3"><div class="Version">
+               <td id="col11"><img class="eye" src="img/eye.png"></td>
+               <td id="col12"><div class="stick"></div></td>
+               <td id="col13"><div class="Version">
                   Версия для слабовидящих
                </div></td>
             </tr>
             </table>
          </button>
-      </div>
+      </div></td>
+      </table>
    </div>
+   <div class="slider">
+      <div class="slider__wrapper">
+        <div class="slider__items">
+          <div class="slider__item">
+            <div style="height: 600px; background: orange;"></div>
+          </div>
+          <div class="slider__item">
+            <div style="height: 600px; background: green;"></div>
+          </div>
+          <div class="slider__item">
+            <div style="height: 600px; background: violet;"></div>
+          </div>
+          <div class="slider__item">
+            <div style="height: 600px; background: coral;"></div>
+          </div>
+        </div>
+      </div>
+      <a class="slider__control slider__control_prev" href="#" role="button"></a>
+      <a class="slider__control slider__control_next slider__control_show" href="#" role="button"></a>
+    </div>
+  
+    <script src="main.js"></script>
+    <script>
+      slideShow('.slider', {
+        isAutoplay: true
+      });
+    </script>
 </body>
 </html>
