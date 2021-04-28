@@ -345,12 +345,53 @@ table .header{
    top: 10vh;
    left: 5vw;
    width: 66%;
+   text-align: center;
+   padding-top: 1%;
 }
+
+.news_block h1{
+   position: relative;
+   font-family: 'Merriweather', serif;
+   position: relative;
+   color: #FCF2E5;
+   background: rgba(60, 54, 100, 1);
+   font-size: 2.5em;
+   font-weight: normal;
+   padding: 10px 40px;
+   display: inline-block;
+   margin: 0;
+   line-height: 1;
+   margin-bottom: 5%;
+}
+
+h1:before {
+   content: ""; 
+   position: absolute;
+   width: 100%;
+   height: 4px;
+   left: 0;
+   bottom: -15px;
+   background: rgba(60, 54, 100, 1);
+ }
+
+ h1:after {
+   content: ""; 
+   position: absolute;
+   height: 0;
+   width: 80%;
+   border-top: 10px solid rgba(60, 54, 100, 1);
+   border-left: 12px solid transparent;
+   border-right: 12px solid transparent;
+   left: 50%;
+   transform: translateX(-50%);
+   bottom: -25px;
+ }
 
 .news_item{
    width: 80%;
    height: 100%;
    overflow: hidden;
+   text-align: left;
 }
 
 .news_item img{
@@ -369,16 +410,77 @@ table .header{
    color: black;
 }
 
-.news_table tr{
-   margin-bottom: 500px;
-}
 
 .ads{
    position: absolute;
-   display: inline-block;
+   display: table;
    width: 24%;
    height: 570px;
    right: 5vw;
    top: 88.2vh;
-   background-color: chartreuse;
+   padding-top: 1.35%;
+   border: 5px outset rgba(60, 54, 100, 1);
+	margin-bottom: 5px;
+   text-align: center;
+}
+
+.ads h2{
+   position: relative;
+   font-family: 'Merriweather', serif;
+   position: relative;
+   color: #FCF2E5;
+   background: rgba(60, 54, 100, 1);
+   font-size: 2em;
+   font-weight: normal;
+   padding: 10px 40px;
+   display: inline-block;
+   margin: 0;
+   line-height: 1;
+}
+
+.ads h2:before {
+   content: ""; 
+   position: absolute;
+   width: 100%;
+   height: 4px;
+   left: 0;
+   bottom: -15px;
+   background: rgba(60, 54, 100, 1);
+ }
+
+ .ads h2:after {
+   content: ""; 
+   position: absolute;
+   height: 0;
+   width: 75%;
+   border-top: 10px solid rgba(60, 54, 100, 1);
+   border-left: 12px solid transparent;
+   border-right: 12px solid transparent;
+   left: 50%;
+   transform: translateX(-50%);
+   bottom: -25px;
+ }
+
+.ads_table{
+   margin-top: 12%;
+}
+
+.ads_thing{
+   display: block;
+}
+
+.ads_thing img{
+   position: relative;
+   width: 80%;
+}
+
+.ads p{
+   position: relative;
+   font-family: Istok Web;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 25px;
+   color: black;
+   text-align: left;
 }

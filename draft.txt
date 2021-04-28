@@ -1,208 +1,45 @@
-.navbar {
-   background-color: rgba(60, 54, 100, 1);
-   position: absolute;
-   width: 1920px;
-   height: 136px;
-   left: 0px;
-   top: -2px;
+ .ads_item{
+   width: 80%;
+   height: 100%;
+   overflow: hidden;
+   text-align: left;
 }
 
-.logo{
-   
-   width: 130px;
-   height: 118px;
-   left: 140px;
-   top: 10px;
+.ads_item img{
+   border-radius: 100%;
+   object-fit: cover;
+   width: 100%;
+   height: 250px;
 }
 
-.news{
-   
-   width: 78px;
-   height: 29px;
-   left: 210px;
-   top: 63px;
-}
-
-.use_inf{
-   
-   width: 232px;
-   height: 29px;
-   left: 318px;
-   top: 63px;
-}
-
-#sections{
+.ads_item p{
    font-family: Istok Web;
    font-style: normal;
    font-weight: normal;
-   font-size: 20px;
-   line-height: 29px;
-   color: white;
+   font-size: 18px;
+   line-height: 25px;
+   color: black;
 }
 
-#arrow{
-   
-   width: 17px;
-   height: 7.46px;
-   top: 15px;
-}
-
-.educ_process{
-   
-   width: 183px;
-   height: 29px;
-   left: 580px;
-   top: 63px;
-}
-
-.ped_team{
-   
-   width: 130px;
-   height: 32.77px;
-   left: 793px;
-   top: 63px
-}
-
-.el_diary{
-   
-   width: 130px;
-   height: 32.77px;
-   left: 953px;
-   top: 49px;
-}
-
-.version{
-   
-   width: 295px;
-   height: 109.44px;
-   left: 1114px;
-   top: 13.5px;
-   background-color: rgba(60, 54, 100, 1);
-   border-color: white;
-   border-width: 8px;
-}
-
-.eye{
-   width: 98px;
-   height: 50px;
-
-}
-
-.stick{
-   width: 3px;
-   height: 80px;
-   background-color: white;
-}
-
-.Version{
-   font-family: Istok Web;
-   font-style: normal;
-   font-weight: normal;
-   font-size: 20px;
-   line-height: 29px;
-   text-align: center;
-   color: #F0F0F0;
-   width: 142px;
-   height: 55px;
-}
-
-table .button{
-   width: 100%;
-}
-
-#col11{
-width: 45%;
-}
-
-#col12{
-   width: 10%;
-}
-
-#col13{
-   width: 45%;
-}
-
-table .header{
-   position: center;
-   width: 100%;
-}
-
-#col1{
-   width: 7%;
-}
-
-#col2{
-   width: 4%;
-}
-
-#col3{
-   width: 12%;
-}
-
-#col4{
-   width: 10%;
-}
-
-#col5{
-   width: 7%;
-}
-
-#col6{
-   width: 7%;
-}
-
-#col7{
-   width: 15%;
-}
-
-
-
-
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" type="text/css" href="css/style.css">
-   <title>Lyceum №34</title>
-</head>
-<body>
-   <div class="navbar">
-      <table class="header">
-      <td id="col1"><img class="logo" src="img/logo.png" alt="Логотип Лицея"></td>
-      <td id="col2"><a class="news" id="sections" href="">Новости</a></td>
-      <td id="col3"><div class="use_inf">
-         <a id="sections" href="">Полезная информация</a>
-         <img id="arrow" src="img/arrow down.png">
-      </div></td>
-      <td id="col4"><div class="educ_process">
-         <a id="sections" href="">Учебный процесс</a>
-         <img id="arrow" src="img/arrow down.png">
-      </div></td>
-      <td id="col5"><div class="ped_team">
-         <a id="sections" href="">Педколлектив</a>
-      </div></td>
-      <td id="col6"><div class="el_diary">
-         <a id="sections" href="">Электронный дневник</a>
-      </div></td>
-      <td id="col7"><div class="button">
-         <button class="version">
-            <table class="button">
-            <tr>
-               <td id="col11"><img class="eye" src="img/eye.png"></td>
-               <td id="col12"><div class="stick"></div></td>
-               <td id="col13"><div class="Version">
-                  Версия для слабовидящих
-               </div></td>
-            </tr>
-            </table>
-         </button>
-      </div></td>
+<table class="ads_table">
+         <tr>
+            <td>
+               <a href="">
+                  <div class="ads_item">
+                     <img width="100%" src="img/like news.jpg">
+                     <p>Enim proident aliquip cillum irure minim laborum cillum aliquip ullamco ullamco sint minim enim.</p>
+                  </div>
+               </a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="">
+                  <div class="ads_item">
+                     <img width="100%" src="img/like news.jpg">
+                     <p>Enim proident aliquip cillum irure minim laborum cillum aliquip ullamco ullamco sint minim enim.</p>
+                  </div>
+               </a>
+            </td>
+         </tr>
       </table>
-   </div>
-</body>
-</html>
