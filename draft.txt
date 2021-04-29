@@ -1,31 +1,140 @@
- .ads_item{
-   width: 80%;
-   height: 100%;
-   overflow: hidden;
-   text-align: left;
-}
-
-.ads_item img{
-   border-radius: 100%;
-   object-fit: cover;
-   width: 100%;
-   height: 250px;
-}
-
-.ads_item p{
-   font-family: Istok Web;
-   font-style: normal;
-   font-weight: normal;
-   font-size: 18px;
-   line-height: 25px;
-   color: black;
-}
-
-<table class="ads_table">
-         <tr>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <title>Lyceum №34</title>
+</head>
+<body>
+   <div class="navbar">
+         <img class="logo" src="img/logo.png" alt="Логотип Лицея">
+         <a class="news" id="sections" href="">Новости</a>
+         <div class="use_inf">
+            <a id="sections" href="">Полезная информация</a>
+            <img id="arrow" src="img/arrow down.png">
+            </div>
+      <div class="educ_process">
+         <a id="sections" href="">Учебный процесс</a>
+         <img id="arrow" src="img/arrow down.png">
+      </div>
+      <div class="ped_team">
+         <a id="sections" href="">Педколлектив</a>
+      </div>
+      <div class="el_diary">
+         <a id="sections" href="">Электронный дневник</a>
+      </div>
+      <div class="button">
+         <button class="version">
+            <table class="button">
+            <tr>
+               <td id="col11"><img class="eye" src="img/eye.png"></td>
+               <td id="col12"><div class="stick"></div></td>
+               <td id="col13"><div class="Version">
+                  Версия для слабовидящих
+               </div></td>
+            </tr>
+            </table>
+         </button>
+      </div>
+   </div>
+   <div class="slider">
+      <div class="slider__wrapper">
+        <div class="slider__items">
+          <div class="slider__item">
+            <div class="slider_background">
+               <a class="slide" href=""></a>
+                  <img id="slide_img" src="img/EGA.jpg" alt="">
+                  <div class="bar">
+                     <h2>ЕГЭ и ОГЭ</h2>
+                     <p>Расписание, порядок проведения, подготовка и многое другое</p>
+                     <button>
+                        <p>Узнать подробнее</p>
+                     </button>
+                  </div>
+               </a>
+            </div>
+          </div>
+          <div class="slider__item">
+            <div class="slider_background">
+               <a class="slide" href="">
+                  <img id="slide_img" src="img/GTO.png" alt="">
+                  <div class="bar">
+                     <h2>ГТО</h2>
+                     <p>Условия, ступени и нормативные документы</p>
+                     <button>
+                        <p>Узнать подробнее</p>
+                     </button>
+                  </div>
+               </a>
+            </div>
+          </div>
+          <div class="slider__item">
+            <div class="slider_background">
+               <a class="slide" href="">
+                  <img id="slide_img" src="img/prof.png" alt="">
+                  <div class="bar">
+                     <h2>ПРОФОРИЕНТАЦИОННАЯ РАБОТА</h2>
+                     <p>Планы мероприятий, положения опортфолио и программы курсов</p>
+                     <button>
+                        <p>Узнать подробнее</p>
+                     </button>
+                  </div>
+               </a>
+            </div>
+          </div>
+          <div class="slider__item">
+            <div class="slider_background">
+               <a class="slide" href="">
+                  <img id="slide_img" src="img/background.jpg" alt="">
+                  <div class="bar">
+                     <h2>УСЛОВИЯ ПРИЁМА</h2>
+                     <p>Правила приёма, приказ, регламенти положения о классах</p>
+                     <button>
+                        <p>Узнать подробнее</p>
+                     </button>
+                  </div>
+               </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="slider__control slider__control_prev" href="#" role="button"></a>
+      <a class="slider__control slider__control_next slider__control_show" href="#" role="button"></a>
+    </div>
+    <div class="body">
+    <div class="news_block">
+       <h1> Новости Лицея </h1>
+       <table class="news_table">
+          <tr>
             <td>
                <a href="">
-                  <div class="ads_item">
+               <div class="news_item">
+                  <img width="100%" src="img/like news.jpg">
+                  <p>Enim proident aliquip cillum irure minim laborum cillum aliquip ullamco ullamco sint minim enim.</p>
+                </div>
+                </a>
+               </td>
+               <td>
+               <a href="">
+                  <div class="news_item">
+                  <img width="100%" src="img/like news.jpg">
+                  <p>Enim proident aliquip cillum irure minim laborum cillum aliquip ullamco ullamco sint minim enim.</p>
+                </div>
+                </a>
+            </td>
+            <td>
+               <a href="">
+                  <div class="news_item">
+                  <img width="100%" src="img/like news.jpg">
+                  <p>Enim proident aliquip cillum irure minim laborum cillum aliquip ullamco ullamco sint minim enim.</p>
+               </div>
+               </a>
+               </td>
+            <td>
+               <a href="">
+                  <div class="news_item">
                      <img width="100%" src="img/like news.jpg">
                      <p>Enim proident aliquip cillum irure minim laborum cillum aliquip ullamco ullamco sint minim enim.</p>
                   </div>
@@ -33,13 +142,80 @@
             </td>
          </tr>
          <tr>
+         <td>
+            <a href="">
+            <div class="news_item">
+               <img width="100%" src="img/like news.jpg">
+               <p>Enim proident aliquip cillum irure minim laborum cillum aliquip ullamco ullamco sint minim enim.</p>
+             </div>
+             </a>
+            </td>
+         <td>
+               <a href="">
+               <div class="news_item">
+                  <img width="100%" src="img/like news.jpg">
+                  <p>Enim proident aliquip cillum irure minim laborum cillum aliquip ullamco ullamco sint minim enim.</p>
+                </div>
+                </a>
+               </td>
             <td>
                <a href="">
-                  <div class="ads_item">
+               <div class="news_item">
+                  <img width="100%" src="img/like news.jpg">
+                  <p>Enim proident aliquip cillum irure minim laborum cillum aliquip ullamco ullamco sint minim enim.</p>
+                </div>
+                </a>
+               </td>
+               <td>
+                  <a href="">
+                  <div class="news_item">
                      <img width="100%" src="img/like news.jpg">
                      <p>Enim proident aliquip cillum irure minim laborum cillum aliquip ullamco ullamco sint minim enim.</p>
-                  </div>
-               </a>
+                   </div>
+                   </a>
+                  </td>
+      </tr>
+      </table>
+    </div>
+    <div class="ads">
+      <h2>Объявления</h2>
+      <table class="ads_table">
+         <tr>
+            <td>
+               <a href="">
+               <div class="ads_thing">
+                  <img width="100%" src="img/like news.jpg">
+                  <p>Enim proident aliquip cillum irure minim laborum cillum aliquip ullamco ullamco sint minim enim.</p>
+               </div></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="">
+               <div class="ads_thing">
+                  <img width="100%" src="img/like news.jpg">
+                  <p>Enim proident aliquip cillum irure minim laborum cillum aliquip ullamco ullamco sint minim enim.</p>
+               </div></a>
             </td>
          </tr>
       </table>
+    </div>
+   </div>
+    <div class="footer">
+      <table>
+         <tr>
+            <td><img src="img/logo.png" alt="Логотип Лицея"></td>
+         </tr>
+         <tr>
+            <td><a class="intelligence" href="">Сведения об образовательной организации</a></td>
+         </tr>
+      </table>
+    </div>
+    <script src="main.js"></script>
+    <script>
+      slideShow('.slider', {
+        isAutoplay: true
+      });
+    </script>
+</body>
+</html>
