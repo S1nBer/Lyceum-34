@@ -16,7 +16,6 @@ body {
    flex-direction: row;
    justify-content: space-between;
    align-items: center;
-   position: absolute;
    width: 100%;
    height: 136px;
    left: 0px;
@@ -26,22 +25,60 @@ body {
 .logo{
    width: 130px;
    height: 118px;
-   left: 140px;
-   top: 10px;
 }
 
 .news{
    width: 78px;
    height: 29px;
-   left: 210px;
-   top: 63px;
 }
 
 .use_inf{
    width: 232px;
    height: 29px;
-   left: 318px;
-   top: 63px;
+}
+
+.menu1, .menu2{
+   position: relative;
+
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-around;
+   overflow: hidden;
+   background-color: rgba(99, 98, 98, 1);
+   z-index: 999999;
+}
+
+
+.menu1 a, .menu2 a{
+   margin-left: 10px;
+   margin-right: 10px;
+   font-family: Istok Web;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 20px;
+   line-height: 35px;
+   color: white;
+   white-space: nowrap;
+}
+
+.menu1{
+   width: 200%;
+   right: 50%;
+   height: 200%;
+   display: flex;
+   display: table;
+}
+
+.menu2{
+   width: 410%;
+   right: 150%;
+   display: wrap;
+   display: table;
+   display: block;
+}
+
+.menu1 li, .menu2 li{
+   display: inline-block
 }
 
 #sections{
@@ -54,42 +91,29 @@ body {
 }
 
 #arrow{
-   
    width: 17px;
    height: 7.46px;
    top: 15px;
 }
 
 .educ_process{
-   
    width: 183px;
    height: 29px;
-   left: 580px;
-   top: 63px;
 }
 
 .ped_team{
-   
    width: 130px;
    height: 32.77px;
-   left: 793px;
-   top: 63px
 }
 
 .el_diary{
-   
    width: 130px;
    height: 32.77px;
-   left: 953px;
-   top: 49px;
 }
 
 .version{
-   
    width: 295px;
    height: 109.44px;
-   left: 1114px;
-   top: 13.5px;
    background-color: rgba(60, 54, 100, 1);
    border-color: white;
    border-width: 8px;
@@ -181,7 +205,6 @@ table .header{
    max-height: 600px;
    margin-left: auto;
    margin-right: auto;
-   margin-top: 134px;
  }
  
  /* стили для обёртки, в которой заключены слайды */
