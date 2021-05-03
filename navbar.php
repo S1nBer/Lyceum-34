@@ -11,7 +11,7 @@
 <body>
 <div class="navbar">
          <img class="logo" src="img/logo.png" alt="Логотип Лицея">
-         <a class="news" id="sections" href="">Новости</a>
+         <a class="news" id="sections" href="index.php">Новости</a>
          <div class="use_inf">
             <a id="sections" href="">Полезная информация</a>
             <img id="arrow" src="img/arrow down.png">
