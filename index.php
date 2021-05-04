@@ -10,6 +10,11 @@
 </head>
 <body>
    <?php
+   require_once 'admin/connect.php';
+   session_start();
+if (isset($_SESSION['Login']) && $_SESSION['Login'] == 'YES') {
+        echo '<h3>Вы зашли как админ</h3>';
+}
    require_once 'navbar.php'; 
    ?>
    <div class="slider">
@@ -79,76 +84,44 @@
     <div class="body">
     <div class="news_block">
        <h1> Новости Лицея </h1>
-       <table class="news_table">
-          <tr>
-            <td>
+       <div class="cur_events">
                <a href="">
                <div class="news_item">
                   <img width="100%" src="img/like news.jpg">
                   <p>Enim proident aliquip cillum irure minim laborum cillum aliquip ullamco ullamco sint minim enim.</p>
                 </div>
                 </a>
-               </td>
-               <td>
                <a href="">
                   <div class="news_item">
                   <img width="100%" src="img/like news.jpg">
                   <p>Enim proident aliquip cillum irure minim laborum cillum aliquip ullamco ullamco sint minim enim.</p>
                 </div>
                 </a>
-            </td>
-            <td>
                <a href="">
                   <div class="news_item">
                   <img width="100%" src="img/like news.jpg">
                   <p>Enim proident aliquip cillum irure minim laborum cillum aliquip ullamco ullamco sint minim enim.</p>
                </div>
                </a>
-               </td>
-            <td>
                <a href="">
                   <div class="news_item">
                      <img width="100%" src="img/like news.jpg">
                      <p>Enim proident aliquip cillum irure minim laborum cillum aliquip ullamco ullamco sint minim enim.</p>
                   </div>
                </a>
-            </td>
-         </tr>
-         <tr>
-         <td>
-            <a href="">
-            <div class="news_item">
-               <img width="100%" src="img/like news.jpg">
-               <p>Enim proident aliquip cillum irure minim laborum cillum aliquip ullamco ullamco sint minim enim.</p>
-             </div>
-             </a>
-            </td>
-         <td>
                <a href="">
-               <div class="news_item">
+                  <div class="news_item">
                   <img width="100%" src="img/like news.jpg">
                   <p>Enim proident aliquip cillum irure minim laborum cillum aliquip ullamco ullamco sint minim enim.</p>
-                </div>
-                </a>
-               </td>
-            <td>
+               </div>
+               </a>
                <a href="">
-               <div class="news_item">
-                  <img width="100%" src="img/like news.jpg">
-                  <p>Enim proident aliquip cillum irure minim laborum cillum aliquip ullamco ullamco sint minim enim.</p>
-                </div>
-                </a>
-               </td>
-               <td>
-                  <a href="">
                   <div class="news_item">
                      <img width="100%" src="img/like news.jpg">
                      <p>Enim proident aliquip cillum irure minim laborum cillum aliquip ullamco ullamco sint minim enim.</p>
-                   </div>
-                   </a>
-                  </td>
-      </tr>
-      </table>
+                  </div>
+               </a>
+               </div>
     </div>
     <?php
     require_once 'ads.php'; 

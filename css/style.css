@@ -2,13 +2,14 @@ body {
    margin: 0;
    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-   color: #fff;
+   color: black;
    display: table;
  }
 
  a { 
    text-decoration: none; 
 }
+
 
 .navbar {
    background-color: rgba(60, 54, 100, 1);
@@ -39,7 +40,6 @@ body {
 
 .menu1, .menu2{
    position: relative;
-
    flex-direction: row;
    align-items: center;
    justify-content: space-around;
@@ -165,38 +165,6 @@ width: 45%;
    width: 45%;
 }
 
-table .header{
-   width: 100%;
-}
-
-
-#col1{
-   width: 7%;
-}
-
-#col2{
-   width: 7%;
-}
-
-#col3{
-   width: 12%;
-}
-
-#col4{
-   width: 10%;
-}
-
-#col5{
-   width: 7%;
-}
-
-#col6{
-   width: 7%;
-}
-
-#col7{
-   width: 15%;
-}
 
 .slider {
    position: relative;
@@ -369,24 +337,22 @@ table .header{
 .body{
    display: flex;
    justify-content: space-between;
-   box-sizing: border-box;
 }
 
 .news_block{
-   position: relative;
-   display: inline-block;
-   top: 10vh;
+   top: 20vh;
    left: 5vw;
-   width: 66%;
+   width: 60%;
    text-align: center;
    padding-top: 1%;
    margin-bottom: 7%;
+   padding-left: 5vw;
+   padding-right: 5vw;
 }
 
 .news_block h1{
    position: relative;
    font-family: 'Merriweather', serif;
-   position: relative;
    color: #FCF2E5;
    background: rgba(60, 54, 100, 1);
    font-size: 2.5em;
@@ -396,6 +362,7 @@ table .header{
    margin: 0;
    line-height: 1;
    margin-bottom: 5%;
+   margin-top: 8%;
 }
 
 h1:before {
@@ -421,11 +388,18 @@ h1:before {
    bottom: -25px;
  }
 
+ .cur_events{
+   display: flex;
+   flex-wrap: wrap;
+ }
+
 .news_item{
-   width: 80%;
+   width: 250px;
    height: 100%;
    overflow: hidden;
    text-align: left;
+   margin-left: 15px;
+   margin-right: 15px;
 }
 
 .news_item img{
@@ -515,7 +489,6 @@ h1:before {
    font-size: 18px;
    line-height: 25px;
    color: black;
-   text-align: left;
 }
 
 .footer{
@@ -534,6 +507,7 @@ h1:before {
    display: flex;
    flex-direction: row;
    justify-content: space-between;
+   text-align: left;
 }
 
 .p{
