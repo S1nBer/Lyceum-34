@@ -11,26 +11,16 @@
 <body>
 <div class="ads">
       <h2>Объявления</h2>
-      <table class="ads_table">
-         <tr>
-            <td>
                <a href="">
                <div class="ads_thing">
                   <img width="100%" src="img/like news.jpg">
                   <p>Enim proident aliquip cillum irure minim laborum cillum aliquip ullamco ullamco sint minim enim.</p>
                </div></a>
-            </td>
-         </tr>
-         <tr>
-            <td>
                <a href="">
                <div class="ads_thing">
                   <img width="100%" src="img/like news.jpg">
                   <p>Enim proident aliquip cillum irure minim laborum cillum aliquip ullamco ullamco sint minim enim.</p>
                </div></a>
-            </td>
-         </tr>
-      </table>
     </div>
 </body>
 </html>
