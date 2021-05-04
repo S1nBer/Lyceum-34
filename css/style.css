@@ -340,8 +340,7 @@ width: 45%;
 }
 
 .news_block{
-   top: 20vh;
-   left: 5vw;
+   position: relative;
    width: 60%;
    text-align: center;
    padding-top: 1%;
@@ -362,7 +361,7 @@ width: 45%;
    margin: 0;
    line-height: 1;
    margin-bottom: 5%;
-   margin-top: 8%;
+   margin-top: 5%;
 }
 
 h1:before {
@@ -424,8 +423,8 @@ h1:before {
    display: table;
    width: 24%;
    right: 5vw;
-   top: 10vh; 
-   padding-top: 1.35%;
+   top: 5vh; 
+   padding-top: 0.5%;
    border: 5px outset rgba(60, 54, 100, 1);
    text-align: center;
    margin-bottom: 10%;
@@ -441,7 +440,7 @@ h1:before {
    font-weight: normal;
    padding: 10px 40px;
    display: inline-block;
-   margin: 0;
+   margin-bottom: 10%;
    line-height: 1;
 }
 
