@@ -27,7 +27,7 @@ if(isset($login) && isset($password)) {
            session_start();
            $_SESSION["Login"] = "YES";
            $correct = 'true';
-           header("Location: ../index.php");
+           header("Location: ../components/index.php");
        }
    }
    if(!isset($correct))
