@@ -1,7 +1,8 @@
 <?php
-require_once '/database.php';
-require_once '/models/editads.php';
-require_once '/models/editfooter.php';
-require_once '/models/sections.php';
-require_once '/models/subsections.php';
+require_once '../database.php';
+require_once '../models/news.php';
+
+$link=db_connect();
+$articles=news_all($link);
+include("../view/news.php");
 ?>
