@@ -6,7 +6,6 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" type="text/css" href="../css/style.css">
    <script type="text/javascript" src="../scripts/jquery-3.5.1.min.js"></script>
-   <title>Лицей №34</title>
 </head>
 <body>
 <div class="footer">
