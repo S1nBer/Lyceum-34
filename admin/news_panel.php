@@ -14,7 +14,7 @@ if($action=="add"){
       news_new($link, $_POST['title'], $_POST['date'], $_POST['content']);
       header("Location: news_panel.php");
    }
-   include("../view/news_item_admin.php");
+   include("../view/new_news_item_admin.php");
 }
 
 else if($action == "edit"){
