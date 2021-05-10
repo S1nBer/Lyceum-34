@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "Админ панель"
-AuthUserFile D:\xampp\htdocs\Lyceum\admin\.htpasswd
-Require valid-user
