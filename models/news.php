@@ -54,8 +54,17 @@ function news_new($link, $title, $date, $content){
       return true;
 }
 
-function news_delete($id){
+function news_delete($link, $id){
+      $id=(int)$id;
+      if ($id == 0)
+            return false;
+      $query = sprintf("delete from news where id='%d'", $id);
+      $result = mysqli_query($link, $query);
 
+      if(!$result)
+            die(mysqli_error($link));
+
+      return mysqli_affected_rows($link);
 }
 
 function news_edit($link, $id, $title, $date, $content){
@@ -80,5 +89,9 @@ function news_edit($link, $id, $title, $date, $content){
             die(mysqli_error($link));
             
       return mysqli_affected_rows($link);
+}
+
+function news_intro($title, $len=100){
+      return mb_substr($title, 0, $len);
 }
 ?>

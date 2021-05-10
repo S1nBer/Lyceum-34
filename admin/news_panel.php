@@ -31,6 +31,11 @@ else if($action == "edit"){
    include("../view/news_item_admin.php");
 }
 
+else if($action == "delete"){
+   $id=$_GET['id'];
+   $article = news_delete($link, $id);
+   header("Location: news_panel.php");
+}
 
 else{
    $articles = news_all($link);

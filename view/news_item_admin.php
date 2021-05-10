@@ -9,7 +9,7 @@
 </head>
 <body>
    <div class="container">
-   <form method="post" action="news_panel.php?action=edit&id=<?=$_GET['id']?>">
+   <form method="post" action="news_panel.php?action=<?=$_GET['action']?>&id=<?=$_GET['id']?>">
    <label>
    Заголовок
    <input type="text" name="title" value="<?=$article['title']?>" class="form-item" autofocus required>

@@ -19,7 +19,7 @@
                <a href="../components/news_item.php?id=<?=$a['id']?>">
                <div class="news_item">
                   <img width="100%" src="../img/like news.jpg">
-                  <p><?=$a['title']?></p>
+                  <p><?=news_intro($a['title'])?></p>
                 </div>
                 </a>
                 <?php endforeach ?>
