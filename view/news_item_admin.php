@@ -9,18 +9,18 @@
 </head>
 <body>
    <div class="container">
-   <form method="post" action="news_panel.php?action=add">
+   <form method="post" action="news_panel.php?action=<?=$_GET['action']?>&id=<?=$_GET['id']?>">
    <label>
    Заголовок
-   <input type="text" name="title" value="" class="form-item" autofocus require>
+   <input type="text" name="title" value="<?=$article['title']?>" class="form-item" autofocus required>
    </label>
    <label>
    Дата
-   <input type="date" name="date" value="" class="form-item" require>
+   <input type="date" name="date" value="<?=$article['date']?>" class="form-item" required>
    </label>
    <label>
    Содержание
-   <textarea class="form-item" name="content" require></textarea>
+   <textarea class="form-item" name="content" required><?=$article['content']?></textarea>
    </label>
    <input type="submit" value="Сохранить" class="bnt">
    </form>

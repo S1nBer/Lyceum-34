@@ -24,8 +24,8 @@ function news_get($link, $id_article){
    $query=sprintf("Select * from news where id=%d",(int)$id_article);
    $result=mysqli_query($link, $query);
 
-   if (!$result)
-   die(mysqli_error($link)); 
+   if (!$result){
+      die(mysqli_error($link));}
 
    $article=mysqli_fetch_assoc($result);
 
@@ -58,7 +58,27 @@ function news_delete($id){
 
 }
 
-function news_edit($id, $title, $date, $content){
+function news_edit($link, $id, $title, $date, $content){
+      $title=trim($title);
+      $content=trim($content);
+      $date=trim($date);
+      $id=(int)$id;
 
+      if($title=="")
+            return false;
+      
+      $sql="update news set title='%s', date='%s', content='%s' where id='%d'";
+
+      $query=sprintf($sql, mysqli_real_escape_string($link, $title),
+      mysqli_real_escape_string($link, $date),
+      mysqli_real_escape_string($link, $content),
+      $id);
+      
+      $result=mysqli_query($link, $query);
+
+      if(!$result)
+            die(mysqli_error($link));
+            
+      return mysqli_affected_rows($link);
 }
 ?>

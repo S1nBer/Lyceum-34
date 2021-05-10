@@ -16,6 +16,22 @@ if($action=="add"){
    }
    include("../view/news_item_admin.php");
 }
+
+else if($action == "edit"){
+   if(!isset($_GET['id']))
+      header("Location: news_panel.php");
+   $id=(int)$_GET['id'];
+
+   if(!empty($_POST) && $id > 0){
+      news_edit($link, $id, $_POST['title'], $_POST['date'], $_POST['content']);
+      header("Location: news_panel.php");
+   }
+
+   $article=news_get($link, $id);
+   include("../view/news_item_admin.php");
+}
+
+
 else{
    $articles = news_all($link);
    include("../view/news_admin.php");

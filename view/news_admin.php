@@ -25,8 +25,8 @@
          <tr>
          <td><?=$a['date']?></td>
          <td><?=$a['title']?></td>
-         <td> <a href="news_panel.php?action=edit&id=><?=$a['id']?>">Редактировать</a></td>
-         <td> <a href="news_panel.php?action=delete&id=><?=$a['id']?>">Удалить</a></td>
+         <td> <a href="news_panel.php?action=edit&id=<?=$a['id']?>">Редактировать</a></td>
+         <td> <a href="news_panel.php?action=delete&id=<?=$a['id']?>">Удалить</a></td>
          </tr>
          <?php endforeach ?>
          </table>
