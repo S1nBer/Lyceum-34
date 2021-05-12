@@ -5,11 +5,13 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <!--<link rel="stylesheet" type="text/css" href="../css/style.css">-->
-   <title>Добавление новости</title>
+   <title><?php if($location=="news")
+         echo 'Добавление новости';
+         else echo 'Добавление объявления'?></title>
 </head>
 <body>
    <div class="container">
-   <form method="post" action="news_panel.php?action=add">
+   <form method="post" action="news_panel.php?action=add&location=<?=$location?>">
    <label>
    Заголовок
    <input type="text" name="title" value="" class="form-item" autofocus required>

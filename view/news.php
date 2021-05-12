@@ -26,7 +26,9 @@
                </div>
 
 </div>
-<?php require_once '../components/ads.php'; ?>
+<?php
+require_once '../components/ads.php';
+?>
 </div>
 <?php require_once '../components/footer.php'; ?>
 </body>

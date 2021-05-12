@@ -14,8 +14,8 @@
         <a class="exit" href="../components/index.php">Выйти</a>
         <a class="back" href="../admin/index.php">Вернуться в панель администратора</a>
         <?php if($location=="news")
-         echo '<a href="news_panel.php?action=add">Добавить новость</a>';
-         else echo '<a href="news_panel.php?action=add">Добавить объявление</a>'?>
+         echo '<a href="news_panel.php?action=add&location=news">Добавить новость</a>';
+         else echo '<a href="news_panel.php?action=add&location=ads">Добавить объявление</a>'?>
         <table>
          <tr>
          <th>Дата</th>
@@ -27,8 +27,8 @@
          <tr>
          <td><?=$a['date']?></td>
          <td><?=$a['title']?></td>
-         <td> <a href="news_panel.php?action=edit&id=<?=$a['id']?>">Редактировать</a></td>
-         <td> <a href="news_panel.php?action=delete&id=<?=$a['id']?>">Удалить</a></td>
+         <td> <a href="news_panel.php?action=edit&id=<?=$a['id']?>&location=<?=$location?>">Редактировать</a></td>
+         <td> <a href="news_panel.php?action=delete&id=<?=$a['id']?>&location=<?=$location?>">Удалить</a></td>
          </tr>
          <?php endforeach ?>
          </table>

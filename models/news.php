@@ -1,7 +1,9 @@
 <?php
 function news_all($link, $location){
       //запрос на все новости
-      $query= sprintf("select * from news join articles on news.ind=articles.id_article where article='%s'  order by news.id desc",$location);
+      $location=trim($location);
+
+      $query= sprintf("select * from news where article='%s' order by id desc",$location);
       $result= mysqli_query($link, $query);
 
       if (!$result)
@@ -21,7 +23,7 @@ function news_all($link, $location){
 
 function news_get($link, $id_article){
    //запрос по id
-   $query=sprintf("Select * from news where id=%d",(int)$id_article);
+   $query=sprintf("Select * from news where id='%d'",(int)$id_article);
    $result=mysqli_query($link, $query);
 
    if (!$result){
@@ -32,20 +34,21 @@ function news_get($link, $id_article){
    return $article;
 }
 
-function news_new($link, $title, $date, $content){
+
+function news_new($link, $location, $title, $date, $content){
       $title=trim($title);
       $content=trim($content);
+      $location=trim($location);
 
       if($title=='')
             return false;
-      $t = "insert into news (title, date, content)
-      values ('%s', '%s', '%s')";
+      $t = "insert into news (article, title, date, content)
+      values ('%s', '%s', '%s', '%s')";
 
-      $query=sprintf($t, mysqli_real_escape_string($link, $title),
+      $query=sprintf($t, $location, mysqli_real_escape_string($link, $title),
       mysqli_real_escape_string($link, $date),
       mysqli_real_escape_string($link, $content));
 
-      echo $query;
       $result=mysqli_query($link, $query);
 
       if(!$result)
@@ -67,18 +70,19 @@ function news_delete($link, $id){
       return mysqli_affected_rows($link);
 }
 
-function news_edit($link, $id, $title, $date, $content){
+function news_edit($link, $id, $title, $date, $content, $location){
       $title=trim($title);
       $content=trim($content);
       $date=trim($date);
+      $location=trim($location);
       $id=(int)$id;
 
       if($title=="")
             return false;
       
-      $sql="update news set title='%s', date='%s', content='%s' where id='%d'";
+      $sql="update news set article='%s', title='%s', date='%s', content='%s' where id='%d'";
 
-      $query=sprintf($sql, mysqli_real_escape_string($link, $title),
+      $query=sprintf($sql, $location, mysqli_real_escape_string($link, $title),
       mysqli_real_escape_string($link, $date),
       mysqli_real_escape_string($link, $content),
       $id);
