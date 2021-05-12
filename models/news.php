@@ -1,7 +1,7 @@
 <?php
-function news_all($link){
+function news_all($link, $location){
       //запрос на все новости
-      $query= "select * from news order by id desc";
+      $query= sprintf("select * from news join articles on news.ind=articles.id_article where article='%s'  order by news.id desc",$location);
       $result= mysqli_query($link, $query);
 
       if (!$result)

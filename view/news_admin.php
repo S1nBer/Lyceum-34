@@ -13,7 +13,9 @@
         <h3>Вы зашли как админ</h3>
         <a class="exit" href="../components/index.php">Выйти</a>
         <a class="back" href="../admin/index.php">Вернуться в панель администратора</a>
-        <a href="news_panel.php?action=add">Добавить новость</a>
+        <?php if($location=="news")
+         echo '<a href="news_panel.php?action=add">Добавить новость</a>';
+         else echo '<a href="news_panel.php?action=add">Добавить объявление</a>'?>
         <table>
          <tr>
          <th>Дата</th>
