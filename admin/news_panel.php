@@ -7,7 +7,6 @@ $link = db_connect();
 if (isset($_GET['location']))
    $location=$_GET['location'];
 
-echo $location;
 
 if(isset($_GET['action']))
    $action=$_GET['action'];

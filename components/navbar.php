@@ -41,7 +41,7 @@
          </div>
       </div>
       <div class="ped_team">
-         <a id="sections" href="">Педколлектив</a>
+         <a id="sections" href="../components/ped_team.php">Педколлектив</a>
       </div>
       <div class="el_diary">
          <a id="sections" target="_blank" href="https://cabinet.ruobr.ru/login/?next=/child/studies/mark_table/">Электронный дневник</a>
