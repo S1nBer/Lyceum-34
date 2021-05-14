@@ -16,8 +16,10 @@ include_once('../models/upload.php');
    Категория
    <select name="category">
         <option value="">Выберете категорию учителей</option>
-        <?php foreach ($categories as $c): ?>
-        <option value="<?=$c['category']?>"><?=$c['category']?></option>
+        <?php 
+        $i=0;
+        foreach ($categories as $c): ?>
+        <option value="<?=$i=$i+1?>"><?=$c['category']?></option>
          <?php endforeach ?>
    </select>
    </label>

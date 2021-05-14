@@ -21,9 +21,8 @@ function categories_all($link){
 }
 
 function teachers_all($link, $category){
-   $category=trim($category);
 
-      $query= sprintf("select * from teachers join category on teachers.id_teach=category.id_category where category='%s' order by id_teach",$category);
+      $query= sprintf("select * from teachers where teachers.category='%d' order by id_teach",$category);
       $result= mysqli_query($link, $query);
 
       if (!$result)
@@ -45,8 +44,29 @@ function teachers_get($id){
 
 }
 
-function teachers_new($prof, $name, $achivements, $photo){
+function teachers_new($link, $category, $name, $achievements, $photo, $class){
+      echo $category;
+      $name=trim($name);
+      $achievements=trim($achievements);
+      $photo=trim($photo);
+      $class=trim($class);
 
+      if($name=='')
+            return false;
+      $t = "insert into teachers (category, name, achievements, photo, class)
+      values ('%d', '%s', '%s', '%s', '%s')";
+
+      $query=sprintf($t, $category, mysqli_real_escape_string($link, $name),
+      mysqli_real_escape_string($link, $achievements),
+      mysqli_real_escape_string($link, $photo),
+      mysqli_real_escape_string($link, $class));
+
+      $result=mysqli_query($link, $query);
+
+      if(!$result)
+            die(mysqli_error($link));
+      
+      return true;
 }
 
 function teachers_edit($id, $prof, $name, $achivements, $photo){

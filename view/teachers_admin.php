@@ -13,14 +13,17 @@
         <h3>Вы зашли как админ</h3>
         <a class="exit" href="../components/index.php">Выйти</a>
         <a class="back" href="../admin/index.php">Вернуться в панель администратора</a>
-        <a href="news_panel.php?action=add&location=ads">Добавить объявление</a>
+        <a href="ped_team_panel.php?action=add">Добавить учителя</a>
         <br><br>
         <form action="../admin/ped_team_panel.php" method="post">
         <select name="category" onChange="this.form.submit()">
         <option value="">Выберете категорию учителей</option>
-        <?php foreach ($categories as $c): ?>
-        <option value="<?=$c['category']?>"><?=$c['category']?></option>
+        <?php 
+        $i=0;
+        foreach ($categories as $c): ?>
+        <option value="<?=$i=$i+1?>"><?=$c['category']?></option>
          <?php endforeach ?>
+         <option value="0">Классные руководители</option>
         </select>
         </form>
         <?php if(!empty($teachers))
