@@ -46,7 +46,7 @@ if(isset($_POST['category'])){
       $category = $_POST['category'];
       $teachers = teachers_all($link, $category);}
 
-
+echo $category;
 
 include("../view/teachers_admin.php");}
 ?>

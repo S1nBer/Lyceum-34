@@ -22,13 +22,18 @@ function categories_all($link){
 
 function teachers_all($link, $category){
 
+      if($category == 0){
+            $result = mysqli_query($link, "SELECT * FROM teachers WHERE not class=''");
+      }
+
+      else{
       $query= sprintf("select * from teachers where teachers.category='%d' order by id_teach",$category);
-      $result= mysqli_query($link, $query);
+      $result= mysqli_query($link, $query);}
 
       if (!$result)
       die(mysqli_error($link));
 
-      //получение новостей
+
       $n=mysqli_num_rows($result);
       $teachers=array();
 
