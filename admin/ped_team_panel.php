@@ -33,7 +33,6 @@ if($action=="add"){
          if(!isset($name)){
             $name="";
          }
-         echo $name;
          teachers_new($link, $_POST['category'], $_POST['name'], $_POST['content'], $name, $_POST['class']);
          header("Location: ped_team_panel.php");
       }
@@ -46,7 +45,6 @@ if(isset($_POST['category'])){
       $category = $_POST['category'];
       $teachers = teachers_all($link, $category);}
 
-echo $category;
 
 include("../view/teachers_admin.php");}
 ?>
