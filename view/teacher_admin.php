@@ -8,6 +8,7 @@
    <link rel="stylesheet" type="text/css" href="../css/fancybox.jquery.css">
    <script type="text/javascript" src="../scripts/jquery-3.5.1.min.js"></script>
    <script type="text/javascript" src="../scripts/jquery.fancybox.js"></script>
+   <script src="https://cdn.tiny.cloud/1/sjdxm67xirqk50xy2pgnlbugbovxgpz4ouz6y5r5mj3288eh/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
    <title>Редактирование информации об учителе</title>
 </head>
 <body>
@@ -33,7 +34,7 @@ include_once('../models/upload.php');
    </label>
    <label>
    Об учителе
-   <textarea class="form-item" name="content" required><?=$teacher['achievements']?></textarea>
+   <textarea class="form-item" id="text" name="content" required><?=$teacher['achievements']?></textarea>
    </label>
    <label>
    Прикрепите фотографию
@@ -48,5 +49,18 @@ include_once('../models/upload.php');
    <input type="submit" value="Сохранить" class="bnt">
    </form>
    </div>
+   <script>
+tinymce.init({
+  selector: '#text',
+  plugins: [
+    'advlist autolink lists link image charmap print preview anchor',
+    'searchreplace visualblocks code fullscreen',
+    'insertdatetime media table paste imagetools wordcount'
+  ],
+  toolbar: 'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
+  content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }',
+  language_url : '../scripts/ru.js',
+});
+  </script>
 </body>
 </html>

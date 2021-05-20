@@ -37,6 +37,7 @@ require_once '../components/navbar.php';
          <img class="photo_teacher" width="100%" src="../img/teachers/<?=$t['photo']?>"></a>
          <h3><?=$t['name']?></h3>
          <p><?=$t['achievements']?></p>
+         <?php if(!empty($t['class'])) echo'<p>Классный руководитель в ' .$t['class']. '</p>'; ?>
         </div>
         <?php endforeach ?>
          </div>
