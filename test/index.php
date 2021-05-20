@@ -4,41 +4,32 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Добавление учителя</title>
+   <link rel="stylesheet" type="text/css" href="../css/style.css">
+   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <title>Админ панель</title>
 </head>
 <body>
-<?php
-include_once('../models/upload.php'); 
-?>
-   <div class="container">
-   <form method="post" action="../admin/ped_team_panel.php?action=edit" enctype="multipart/form-data">
-   <label>
-   Категория
-   <!--<select name="category">
-        <option value="">Выберете категорию учителей</option>
-        <?php //foreach ($categories as $c): ?>
-        <option value="<?=$c['category']?>"><?=$c['category']?></option>
-         <?php //endforeach ?>
-   </select>
-   </label>-->
-   <label>
-   Ф.И.О. Учителя
-   <input type="text" name="name" value="" class="form-item">
-   </label>
-   <label>
-   Об учителе
-   <textarea class="form-item" name="content"></textarea>
-   </label>
-   <label>
-   Прикрепите фотографию
-   <input type="file" name="file" value="" class="form-item">
-   </label>
-   <label>
-   Укажите класс, если учитель является классным руководителем
-   <input type="text" name="class" value="" class="form-item">
-   </label>
-   <input type="submit" value="Сохранить" class="bnt">
-   </form>
-   </div>
+
+<h3>Вы зашли как админ</h3>
+        <a class="exit" href="../components/index.php">Выйти из панели администратора</a>
+        <p>Выберете, что хотите изменить:</p>
+        <a class="post_a" href="../admin/news_panel.php?location=news" >Блок новостей</a>
+        <a class="post_a" href="../admin/news_panel.php?location=ads">Объявления</a>
+        <a href="">Разделы в шапке сайта</a>
+        <a href="">Разделы в подвале</a>
+        <a href="../admin/ped_team_panel.php">Педколлектив</a>
+  <textarea>
+    Welcome to TinyMCE!
+  </textarea>
+  <script>
+    tinymce.init({
+      selector: 'textarea',
+      plugins: '',
+      toolbar: '',
+      toolbar_mode: 'floating',
+      });
+  </script>
+</body>
+</html>
 </body>
 </html>
