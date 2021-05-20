@@ -17,17 +17,17 @@
             <p class="p">Телефон приёмной: (3843) 77-13-80</p>
          </div>
          <div class="active_life">
-            <p><a class="p" href="">Победы и награды</a></p>
-            <p><a class="p" href="">Мероприятия</a></p>
+            <p><a class="p" href="../components/footer_section.php?location=wins">Победы и награды</a></p>
+            <p><a class="p" href="../components/footer_section.php?location=events">Мероприятия</a></p>
          </div>
          <div class="connection">
-            <p><a class="p" href="">Служба примирения</a></p>
-            <p><a class="p" href="">Телефоны экстренной помощи</a></p>
+            <p><a class="p" href="../components/footer_section.php?location=service">Служба примирения</a></p>
+            <p><a class="p" href="../components/footer_section.php?location=phonenumber">Телефоны экстренной помощи</a></p>
          </div>
        </div>
        <div class="base_footer">
           <div class="intel">
-            <p><a class="p" href="">Сведения об образовательной организации</a></p>
+            <p><a class="p" href="../components/footer_section.php?location=data">Сведения об образовательной организации</a></p>
           </div>
           <div class="social">
             <div class="p">Мы в соц. сетях: <a class="p" target="_blank" href="https://vk.com/lyceum34nvkz"><img src="../img/vk.png" alt="ВКонтакте"></a>
