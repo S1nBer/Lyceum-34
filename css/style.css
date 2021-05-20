@@ -477,7 +477,8 @@ h1:before {
 
 .ads_thing img{
    position: relative;
-   width: 80%;
+   width: auto;
+   height: 200px;
 }
 
 .ads p{
@@ -535,10 +536,14 @@ h1:before {
 
 .article{
    padding: 2%;
+   width:60%;
+
 }
 
 
-.photo_of_teacher{
+.photo_of_teacher, .preview{
    width: 100px;
 }
+
+
 

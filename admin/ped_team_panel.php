@@ -1,7 +1,6 @@
 <?php
 require_once '../database.php';
 require_once '../models/ped_team.php';
-include_once('../models/upload.php'); 
 
 
 $link = db_connect();
@@ -68,7 +67,6 @@ else if($action == "edit"){
       unlink($img);
       teachers_edit($link, $id, $_POST['category'], $_POST['name'], $_POST['content'], $name, $_POST['class']);
       header("Location: ped_team_panel.php");
-      echo 'успех';
    }
    $teacher=teachers_get($link, $id);
    include("../view/teacher_admin.php");

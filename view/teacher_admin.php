@@ -13,7 +13,7 @@
 </head>
 <body>
 <?php
-include_once('../models/upload.php'); 
+include_once('../models/ped_team.php'); 
 ?>
    <div class="container">
    <form method="post" action="ped_team_panel.php?action=<?=$_GET['action']?>&id=<?=$_GET['id']?>" enctype="multipart/form-data">

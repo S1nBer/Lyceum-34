@@ -15,7 +15,7 @@
    foreach($ads as $a): ?>
                <a href="../components/ads_item.php?id=<?=$a['id']?>">
                <div class="ads_thing">
-                  <img width="100%" src="../img/like news.jpg">
+                  <img width="100%" src="../img/preview/<?=$a['photo']?>">
                   <p><?=news_intro($a['title'])?></p>
                 </div>
                 </a>
