@@ -37,9 +37,7 @@ function news_get($link, $id_article){
 
 function news_new($link, $location, $title, $date, $content){
       $title=trim($title);
-      $title = str_replace(PHP_EOL, '<br>', $title);
       $content=trim($content);
-      $content = str_replace(PHP_EOL, '<br>', $content);
       $location=trim($location);
 
       if($title=='')
@@ -74,9 +72,7 @@ function news_delete($link, $id){
 
 function news_edit($link, $id, $title, $date, $content, $location){
       $title=trim($title);
-      $title = str_replace(PHP_EOL, '<br>', $title);
       $content=trim($content);
-      $content = str_replace(PHP_EOL, '<br>', $content);
       $date=trim($date);
       $location=trim($location);
       $id=(int)$id;

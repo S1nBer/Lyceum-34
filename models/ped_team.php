@@ -73,7 +73,6 @@ function teachers_get($link, $id){
 function teachers_new($link, $category, $name, $achievements, $photo, $class){
       $name=trim($name);
       $achievements=trim($achievements);
-      $achievements = str_replace(PHP_EOL, '<br>', $achievements);
       $photo=trim($photo);
       $class=trim($class);
 
@@ -98,7 +97,6 @@ function teachers_new($link, $category, $name, $achievements, $photo, $class){
 function teachers_edit($link, $id, $category, $name, $achievements, $photo, $class){
       $name=trim($name);
       $achievements=trim($achievements);
-      $achievements = str_replace(PHP_EOL, '<br>', $achievements);
       $photo=trim($photo);
       $class=trim($class);
       $id=(int)$id;
