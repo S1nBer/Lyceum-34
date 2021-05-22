@@ -15,7 +15,7 @@
         <p>Выберете, что хотите изменить:</p>
         <a class="post_a" href="../admin/news_panel.php?location=news" >Блок новостей</a>
         <a class="post_a" href="../admin/news_panel.php?location=ads">Объявления</a>
-        <a href="">Разделы в шапке сайта</a>
+        <a href="../admin/navbar_panel.php">Разделы в шапке сайта</a>
         <a href="../admin/footer_panel.php">Разделы в подвале</a>
         <a href="../admin/ped_team_panel.php">Педколлектив</a>
 </body>

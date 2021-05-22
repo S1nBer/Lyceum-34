@@ -13,7 +13,7 @@
          <img class="logo" src="../img/logo.png" alt="Логотип Лицея">
          <a class="news" id="sections" href="index.php">Новости</a>
          <div class="use_inf">
-            <a id="sections" href="">Полезная информация</a>
+            <a id="sections" href="#">Полезная информация</a>
             <img id="arrow" src="../img/arrow down.png">
             <div  class="menu1">
                <ul>
@@ -24,7 +24,7 @@
             </div>
             </div>
       <div class="educ_process">
-         <a id="sections" href="">Учебный процесс</a>
+         <a id="sections" href="#">Учебный процесс</a>
          <img id="arrow" src="../img/arrow down.png">
          <div  class="menu2">
             <ul>
