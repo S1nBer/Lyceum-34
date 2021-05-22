@@ -10,7 +10,7 @@
    <script type="text/javascript" src="../scripts/jquery.fancybox.js"></script>
    <script src="https://cdn.tiny.cloud/1/sjdxm67xirqk50xy2pgnlbugbovxgpz4ouz6y5r5mj3288eh/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
    <!--<link rel="stylesheet" type="text/css" href="../css/style.css">-->
-   <title>Добавление новости</title>
+   <title>Редактирование статьи</title>
 </head>
 <body>
 <?php
