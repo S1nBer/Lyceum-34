@@ -13,12 +13,82 @@ body {
 .navbar {
    position: relative;
    background-color: rgba(60, 54, 100, 1);
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   align-items: center;
    height: 136px;
    left: 0px;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar a {
+  text-decoration: none;
+  outline: none;
+  display: block;
+  transition: .4s ease-in-out;
+}
+.topmenu {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+  text-align: center;
+  padding: 10px 0;
+}
+.topmenu > li {
+  display: inline-block;
+  position: relative;
+}
+.topmenu > li:after {
+  position: absolute;
+  right: 0;
+  width: 1px;
+  height: 12px;
+  background: #d2d2d2;
+  top: 16px;
+  box-shadow: 4px -2px 0 #d2d2d2;
+  transform: rotate(30deg);
+}
+.topmenu > li:last-child:after {
+  background: none;
+  box-shadow: none;
+}
+.topmenu > li > a {
+  padding: 12px 26px;
+  font-family: Istok Web;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 20px;
+   line-height: 29px;
+   color: white;
+}
+.topmenu li a:hover { color: gray; }
+.submenu {
+  position: absolute;
+  left: -50%;
+  top: 100%;
+  width: 210px;
+  margin-left: -105px;
+  background: #fafafa;
+  border: 2px solid black;
+  z-index: 5;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(.8);
+  transition: .4s ease-in-out;
+}
+.submenu li a {
+  padding: 10px 0;
+  margin: 0 10px;
+  border-bottom: 1px solid #cfcfcf;
+  font-size: 18px;
+  color: #484848;
+  font-family: Istok Web;
+}
+.topmenu > li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
 }
 
 .logo{
@@ -26,88 +96,7 @@ body {
    height: 118px;
 }
 
-.news{
-   width: 78px;
-   height: 29px;
-}
 
-.use_inf{
-   width: 232px;
-   height: 29px;
-}
-
-.menu1, .menu2{
-   position: relative;
-   flex-direction: row;
-   align-items: center;
-   justify-content: space-around;
-   overflow: hidden;
-   background-color: rgba(99, 98, 98, 1);
-   z-index: 999999;
-}
-
-
-.menu1 a, .menu2 a{
-   margin-left: 10px;
-   margin-right: 10px;
-   font-family: Istok Web;
-   font-style: normal;
-   font-weight: normal;
-   font-size: 20px;
-   line-height: 35px;
-   color: white;
-   white-space: nowrap;
-}
-
-.menu1{
-   width: 200%;
-   right: 50%;
-   height: 200%;
-   display: flex;
-   display: table;
-}
-
-.menu2{
-   width: 410%;
-   right: 150%;
-   display: wrap;
-   display: table;
-   display: block;
-}
-
-.menu1 li, .menu2 li{
-   display: inline-block
-}
-
-#sections{
-   font-family: Istok Web;
-   font-style: normal;
-   font-weight: normal;
-   font-size: 20px;
-   line-height: 29px;
-   color: white;
-}
-
-#arrow{
-   width: 17px;
-   height: 7.46px;
-   top: 15px;
-}
-
-.educ_process{
-   width: 183px;
-   height: 29px;
-}
-
-.ped_team{
-   width: 130px;
-   height: 32.77px;
-}
-
-.el_diary{
-   width: 130px;
-   height: 32.77px;
-}
 
 .version{
    width: 295px;
