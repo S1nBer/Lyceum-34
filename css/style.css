@@ -178,8 +178,21 @@ width: 45%;
  .slider__item {
    flex: 0 0 100%;
    max-width: 100%;
+   overflow: hidden;
+   position: relative;
  }
  
+ .slider__item::after {
+   position: absolute;
+   top: 10px;
+   right: 20px;
+   color: rgb(27, 7, 7);
+   font-style: italic;
+   font-size: 32px;
+   font-weight: bold;
+ }
+
+
  /* стили для кнопок "вперед" и "назад" */
  .slider__control {
    position: absolute;

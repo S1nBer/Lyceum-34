@@ -18,5 +18,6 @@
         <a href="../admin/navbar_panel.php">Разделы в шапке сайта</a>
         <a href="../admin/footer_panel.php">Разделы в подвале</a>
         <a href="../admin/ped_team_panel.php">Педколлектив</a>
+        <a href="../admin/slider_panel.php">Слайдер</a>
 </body>
 </html>

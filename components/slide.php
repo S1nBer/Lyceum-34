@@ -3,6 +3,7 @@ require_once '../database.php';
 require_once '../models/slider.php';
 
 $link = db_connect();
-$slides = slides_all($link);
-include("../view/slider.php");
+$slide = slide_get($link, $_GET['id']);
+
+include("../view/slide.php");
 ?>
