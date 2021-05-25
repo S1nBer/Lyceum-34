@@ -60,12 +60,14 @@ else if($action == "edit"){
          echo "<strong>$check</strong>";  
          }
       }
-      if(!isset($name)){
-         $name="";
-      }
       $photo = photo_get($link, $id);
-      $img = '../img/preview/'.$photo['photo'];
-      unlink($img);
+      if(isset($name)){
+         $img = '../img/preview/'.$photo['photo'];
+         unlink($img);
+      }
+      else{
+         $name = $photo['photo'];
+      }
       news_edit($link, $id, $_POST['title'], $_POST['date'], $_POST['content'], $location, $name);
       header("Location: news_panel.php?location=".$location);
    }

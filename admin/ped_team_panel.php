@@ -59,12 +59,14 @@ else if($action == "edit"){
          echo "<strong>$check</strong>";  
          }
       }
-      if(!isset($name)){
-         $name="";
-      }
       $photo = photo_get($link, $id);
-      $img = '../img/teachers/'.$photo['photo'];
-      unlink($img);
+      if(isset($name)){
+         $img = '../img/preview/'.$photo['photo'];
+         unlink($img);
+      }
+      else{
+         $name = $photo['photo'];
+      }
       teachers_edit($link, $id, $_POST['category'], $_POST['name'], $_POST['content'], $name, $_POST['class']);
       header("Location: ped_team_panel.php");
    }

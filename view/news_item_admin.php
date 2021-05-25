@@ -16,6 +16,7 @@
 <?php
 include_once('../models/news.php'); 
 ?>
+
    <div class="container">
    <form method="post" action="news_panel.php?action=<?=$_GET['action']?>&id=<?=$_GET['id']?>&location=<?=$location?>" enctype="multipart/form-data">
    <label>
