@@ -73,6 +73,9 @@ else if($action == "edit"){
 
 else if($action == "delete"){
    $id = $_GET['id'];
+   $photo = photo_get_slide($link, $id);
+   $img = '../img/preview/'.$photo['back'];
+   unlink($img);
    $slide = slide_delete($link, $id);
    header("Location: slider_panel.php");
 }

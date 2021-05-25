@@ -17,8 +17,8 @@
             <div class="slider_background">
                   <img id="slide_img" src="../img/preview/<?=$s['back']?>" alt=""></div>
                   <div class="bar">
-                     <h2><?=$s['title']?></h2>
-                     <p><?=$s['intro']?></p>
+                     <h2><?=title_intro($s['title'])?></h2>
+                     <p><?=intro_intro($s['intro'])?></p>
                      <button onclick="document.location='../components/slide.php?id=<?=$s['id']?>'">
                         <p>Узнать подробнее</p>
                      </button>

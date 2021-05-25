@@ -116,6 +116,8 @@ function slide_delete($link, $id){
       $id = (int)$id;
       if ($id == 0)
             return false;
+      
+      
       $query = sprintf("delete from slider where id='%d'", $id);
       $result = mysqli_query($link, $query);
 

@@ -78,6 +78,10 @@ else if($action == "edit"){
 
 else if($action == "delete"){
    $id=$_GET['id'];
+   $photo = photo_get($link, $id);
+   $photo = photo_get_slide($link, $id);
+   $img = '../img/preview/'.$photo['back'];
+   unlink($img);
    $article = news_delete($link, $id);
    header("Location: news_panel.php?location=".$location);
 }
