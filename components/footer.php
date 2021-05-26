@@ -30,8 +30,8 @@
             <p><a class="p" href="../components/footer_section.php?location=data">Сведения об образовательной организации</a></p>
           </div>
           <div class="social">
-            <div class="p">Мы в соц. сетях: <a class="p" target="_blank" href="https://vk.com/lyceum34nvkz"><img src="../img/vk.png" alt="ВКонтакте"></a>
-               <a class="p" target="_blank" href="https://www.instagram.com/licey34_nvkz/"><img src="../img/instagram.png" alt="Instagram"></a></div>
+            <div class="p">Мы в соц. сетях: <a class="p" target="_blank" href="https://vk.com/lyceum34nvkz" title="Вконтакте"><img src="../img/vk.png" alt="ВКонтакте"></a>
+               <a class="p" target="_blank" href="https://www.instagram.com/licey34_nvkz/" title="Инстаграм"><img src="../img/instagram.png" alt="Instagram"></a></div>
           </div>
        </div>
     </div>
