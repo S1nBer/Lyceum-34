@@ -98,16 +98,19 @@ body {
 
 
 
-.version{
+.button button{
    width: 295px;
    height: 109.44px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
    background-color: rgba(60, 54, 100, 1);
    border-color: white;
    border-width: 8px;
    transition: background-color 0.25s linear;
 }
 
-.version:hover{
+.button button:hover{
    background-color: rgba(0, 0, 0, 0.425);
 }
 
@@ -123,7 +126,7 @@ body {
    background-color: white;
 }
 
-.Version{
+.version{
    font-family: Istok Web;
    font-style: normal;
    font-weight: normal;
@@ -133,23 +136,6 @@ body {
    color: #F0F0F0;
    width: 142px;
    height: 55px;
-}
-
-
-table .button{
-   width: 100%;
-}
-
-#col11{
-width: 45%;
-}
-
-#col12{
-   width: 10%;
-}
-
-#col13{
-   width: 45%;
 }
 
 
