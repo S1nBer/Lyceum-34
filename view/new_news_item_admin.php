@@ -4,7 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!--<link rel="stylesheet" type="text/css" href="../css/style.css">-->
+   <link rel="stylesheet" type="text/css" href="../css/admin.css">
    <link rel="stylesheet" type="text/css" href="../css/fancybox.jquery.css">
    <script type="text/javascript" src="../scripts/jquery-3.5.1.min.js"></script>
    <script type="text/javascript" src="../scripts/jquery.fancybox.js"></script>
@@ -17,24 +17,24 @@
 <?php
 include_once('../models/news.php'); 
 ?>
-   <div class="container">
+   <div class="admin_panel">
    <form method="post" action="news_panel.php?action=add&location=<?=$location?>" enctype="multipart/form-data">
-   <label>
-   Заголовок
+   <p><label>
+   Заголовок: <br>
    <input type="text" name="title" value="" class="form-item" autofocus required>
-   </label>
-   <label>
-   Дата
+   </label></p>
+   <p><label>
+   Дата: <br>
    <input type="date" name="date" value="" class="form-item" required>
-   </label>
-   <label>
-   Содержание
+   </label></p>
+   <p><label>
+   Содержание: <br>
    <textarea class="form-item" id="text" name="content"></textarea>
-   </label>
-   <label>
-   Прикрепите превью для статьи
+   </label></p>
+   <p><label>
+   Прикрепите превью для статьи: <br>
    <input type="file" name="file" value="" class="form-item">
-   </label>
+   </label></p>
    <input type="submit" value="Сохранить" class="bnt">
    </form>
    </div>

@@ -9,7 +9,7 @@
    <script type="text/javascript" src="../scripts/jquery-3.5.1.min.js"></script>
    <script type="text/javascript" src="../scripts/jquery.fancybox.js"></script>
    <script src="https://cdn.tiny.cloud/1/sjdxm67xirqk50xy2pgnlbugbovxgpz4ouz6y5r5mj3288eh/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
-   <!--<link rel="stylesheet" type="text/css" href="../css/style.css">-->
+   <link rel="stylesheet" type="text/css" href="../css/admin.css">
    <title>Редактирование слайда</title>
 </head>
 <body>
@@ -17,26 +17,26 @@
 include_once('../models/slider.php'); 
 ?>
 
-   <div class="container">
+   <div class="admin_panel">
    <form method="post" action="slider_panel.php?action=<?=$_GET['action']?>&id=<?=$_GET['id']?>" enctype="multipart/form-data">
-   <label>
-   Заголовок
+   <p><label>
+   Заголовок: <br>
    <input type="text" name="title" value="<?=$slide['title']?>" class="form-item" autofocus required>
-   </label>
-   <label>
-   Краткое описание
+   </label></p>
+   <p><label>
+   Краткое описание: <br>
    <textarea class="form-item" id="text" name="intro"><?=$slide['intro']?></textarea>
-   </label>
-   <label>
-   Содержание
+   </label></p>
+   <p><label>
+   Содержание: <br>
    <textarea class="form-item" name="content" id="text"><?=$slide['content']?></textarea>
-   </label>
-   <label>
-   Прикрепите фотографию
+   </label></p>
+   <p><label>
+   Прикрепите фотографию: <br>
    <a data-fancybox href="../img/preview/<?=$slide['back']?>">
    <img class="preview" width="100%" src="../img/preview/<?=$slide['back']?>"></a>
    <input type="file" name="file" value="" class="form-item">
-   </label>
+   </label></p>
    <input type="submit" value="Сохранить" class="bnt">
    </form>
    </div>

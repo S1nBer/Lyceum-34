@@ -9,7 +9,7 @@
    <script type="text/javascript" src="../scripts/jquery-3.5.1.min.js"></script>
    <script type="text/javascript" src="../scripts/jquery.fancybox.js"></script>
    <script src="https://cdn.tiny.cloud/1/sjdxm67xirqk50xy2pgnlbugbovxgpz4ouz6y5r5mj3288eh/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
-   <!--<link rel="stylesheet" type="text/css" href="../css/style.css">-->
+   <link rel="stylesheet" type="text/css" href="../css/admin.css">
    <title>Редактирование статьи</title>
 </head>
 <body>
@@ -17,24 +17,24 @@
 include_once('../models/news.php'); 
 ?>
 
-   <div class="container">
+   <div class="admin_panel">
    <form method="post" action="news_panel.php?action=<?=$_GET['action']?>&id=<?=$_GET['id']?>&location=<?=$location?>" enctype="multipart/form-data">
-   <label>
-   Заголовок
+   <p><label>
+   Заголовок: <br>
    <input type="text" name="title" value="<?=$article['title']?>" class="form-item" autofocus required>
-   </label>
-   <label>
-   Дата
+   </label></p>
+   <p><label>
+   Дата: <br>
    <input type="date" name="date" value="<?=$article['date']?>" class="form-item" required>
-   </label>
-   <label>
-   Содержание
+   </label></p>
+   <p><label>
+   Содержание: <br>
    <textarea class="form-item" name="content" id="text"><?=$article['content']?></textarea>
-   </label>
-   <label>
-   Прикрепите фотографию
+   </label></p>
+   <p><label>
+   Прикрепите превью для статьи: <br>
    <?php if(!empty($article['photo'])) echo' <a data-fancybox href="../img/preview/' .$article['photo']. '">
-   <img class="preview" width="100%" src="../img/preview/'.$article['photo'].'"></a>';?>
+   <img class="preview" width="100%" src="../img/preview/'.$article['photo'].'"></a>';?></p>
    <input type="file" name="file" value="" class="form-item">
    </label>
    <input type="submit" value="Сохранить" class="bnt">

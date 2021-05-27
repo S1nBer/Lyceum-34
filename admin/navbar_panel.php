@@ -15,7 +15,6 @@ if($action=="add"){
    $type = $_POST['type'];
    if(!empty($_POST['title'])){
       section_new($link, $_GET['type'], $_POST['title'], $_POST['content']);
-      //echo $type;
       header("Location: navbar_panel.php");
    }
    include("../view/new_section_admin.php");

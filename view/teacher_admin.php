@@ -4,7 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" type="text/css" href="../css/style.css">
+   <link rel="stylesheet" type="text/css" href="../css/admin.css">
    <link rel="stylesheet" type="text/css" href="../css/fancybox.jquery.css">
    <script type="text/javascript" src="../scripts/jquery-3.5.1.min.js"></script>
    <script type="text/javascript" src="../scripts/jquery.fancybox.js"></script>
@@ -15,10 +15,10 @@
 <?php
 include_once('../models/ped_team.php'); 
 ?>
-   <div class="container">
+   <div class="admin_panel">
    <form method="post" action="ped_team_panel.php?action=<?=$_GET['action']?>&id=<?=$_GET['id']?>" enctype="multipart/form-data">
-   <label>
-   Категория
+   <p><label>
+   Категория: <br>
    <select name="category">
         <option value="">Выберете категорию учителей</option>
         <?php 
@@ -27,25 +27,25 @@ include_once('../models/ped_team.php');
         <option value="<?=$i=$i+1?>" <?php if($i == $teacher['category']) echo 'selected'; ?>><?=$c['category']?></option>
          <?php endforeach ?>
    </select>
-   </label>
-   <label>
-   Ф.И.О. Учителя
+   </label></p>
+   <p><label>
+   Ф.И.О. Учителя: <br>
    <input type="text" name="name" value="<?=$teacher['name']?>" class="form-item" required>
-   </label>
-   <label>
-   Об учителе
+   </label></p>
+   <p><label>
+   Об учителе: <br>
    <textarea class="form-item" id="text" name="content" required><?=$teacher['achievements']?></textarea>
-   </label>
-   <label>
-   Прикрепите фотографию
+   </label></p>
+   <p><label>
+   Прикрепите фотографию: <br>
    <?php if(!empty($teacher['photo'])) echo' <a data-fancybox href="../img/teachers/' .$teacher['photo']. '">
    <img class="photo_of_teacher" width="100%" src="../img/teachers/'.$teacher['photo'].'"></a>';?>
    <input type="file" name="file" value="" class="form-item">
-   </label>
-   <label>
-   Укажите класс, если учитель является классным руководителем
+   </label></p>
+   <p><label>
+   Укажите класс, если учитель является классным руководителем: <br>
    <input type="text" name="class" value="<?=$teacher['class']?>" class="form-item">
-   </label>
+   </label></p>
    <input type="submit" value="Сохранить" class="bnt">
    </form>
    </div>

@@ -6,20 +6,20 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" type="text/css" href="../css/style.css">
    <script src="https://cdn.tiny.cloud/1/sjdxm67xirqk50xy2pgnlbugbovxgpz4ouz6y5r5mj3288eh/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
-   <!--<link rel="stylesheet" type="text/css" href="../css/style.css">-->
+   <link rel="stylesheet" type="text/css" href="../css/admin.css">
    <title>Редактирование раздела</title>
 </head>
 <body>
-   <div class="container">
+   <div class="admin_panel">
    <form method="post" action="navbar_panel.php?action=<?=$_GET['action']?>&id=<?=$id?>&type=<?=$type?>">
-   <label>
-   Заголовок
+   <p><label>
+   Заголовок: <br>
    <input type="text" name="title" value="<?=$section['title']?>" class="form-item" autofocus required>
-   </label>
-   <label>
-   Содержание
+   </label></p>
+   <p><label>
+   Содержание: <br>
    <textarea class="form-item" name="content" id="text"><?=$section['content']?></textarea>
-   </label>
+   </label></p>
    <input type="submit" value="Сохранить" class="bnt">
    </form>
    </div>
