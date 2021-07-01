@@ -65,7 +65,7 @@ body {
 .topmenu li a:hover { color: gray; }
 .submenu {
   position: absolute;
-  left: -50%;
+  left: 5%;
   top: 100%;
   width: 210px;
   margin-left: -105px;
@@ -89,6 +89,10 @@ body {
   visibility: visible;
   opacity: 1;
   transform: scale(1);
+}
+
+.arrow{
+   width: 15px;
 }
 
 .logo{
@@ -399,9 +403,9 @@ h1:before {
    text-align: center;
    font-family: Istok Web;
    font-style: normal;
-   font-weight: normal;
-   font-size: 18px;
-   line-height: 25px;
+   font-weight: 500;
+   font-size: 26px;
+   line-height: 28px;
    color: black;
 }
 
@@ -473,9 +477,9 @@ h1:before {
    position: relative;
    font-family: Istok Web;
    font-style: normal;
-   font-weight: normal;
-   font-size: 18px;
-   line-height: 25px;
+   font-weight: 500;
+   font-size: 26px;
+   line-height: 28px;
    color: black;
 }
 
@@ -526,7 +530,7 @@ h1:before {
 
 .article{
    padding: 2%;
-   width:60%;
+   width: 60%;
 
 }
 

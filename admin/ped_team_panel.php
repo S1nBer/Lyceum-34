@@ -17,11 +17,11 @@ if($action=="add"){
             // если была произведена отправка формы
          if(isset($_FILES['file'])) {
             // проверяем, можно ли загружать изображение
-            $check = can_upload($_FILES['file']);
+            $check = can_upload_photo($_FILES['file']);
     
             if($check === true){
             // загружаем изображение на сервер
-            $name = make_upload($_FILES['file']);
+            $name = make_upload_photo($_FILES['file']);
             //echo "<strong>Файл успешно загружен!</strong>";
             }
             else{
@@ -47,11 +47,11 @@ else if($action == "edit"){
       // если была произведена отправка формы
       if(isset($_FILES['file'])) {
          // проверяем, можно ли загружать изображение
-         $check = can_upload($_FILES['file']);
+         $check = can_upload_photo($_FILES['file']);
  
          if($check === true){
          // загружаем изображение на сервер
-         $name = make_upload($_FILES['file']);
+         $name = make_upload_photo($_FILES['file']);
          //echo "<strong>Файл успешно загружен!</strong>";
          }
          else{
@@ -59,7 +59,7 @@ else if($action == "edit"){
          echo "<strong>$check</strong>";  
          }
       }
-      $photo = photo_get($link, $id);
+      $photo = photo_get_teacher($link, $id);
       if(isset($name)){
          $img = '../img/preview/'.$photo['photo'];
          unlink($img);
@@ -76,7 +76,7 @@ else if($action == "edit"){
 
 else if($action == "delete"){
    $id=$_GET['id'];
-   $photo = photo_get($link, $id);
+   $photo = photo_get_teacher($link, $id);
    $img = '../img/teachers/'.$photo['photo'];
    unlink($img);
    $teacher = teachers_delete($link, $id);

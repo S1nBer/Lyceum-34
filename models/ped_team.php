@@ -1,6 +1,6 @@
 <?php
 
-function can_upload($file){
+function can_upload_photo($file){
 	// если имя пустое, значит файл не выбран
     /*if($file['name'] == '')
 		return 'Вы не выбрали файл.';*/
@@ -24,14 +24,14 @@ function can_upload($file){
 	return true;
   }
   
-function make_upload($file){	
+function make_upload_photo($file){	
       // формируем уникальное имя картинки: случайное число и name
       $name = mt_rand(0, 10000) . $file['name'];
       copy($file['tmp_name'], '../img/teachers/' . $name);
       return $name;
 }
 
-function photo_get($link, $id){
+function photo_get_teacher($link, $id){
 
       $query = sprintf("select photo from teachers where id_teach = '%d'", $id);
       $result = mysqli_query($link, $query);
@@ -162,6 +162,18 @@ function teachers_delete($link, $id){
             die(mysqli_error($link));
 
       return mysqli_affected_rows($link);
+}
+
+function category($link, $category){
+      $query = sprintf("select category from category where id_category = '%d'", $category);
+      $result = mysqli_query($link, $query);
+
+      if (!$result)
+      die(mysqli_error($link));
+
+      $category = mysqli_fetch_assoc($result);
+
+      return $category;
 }
 
 ?>

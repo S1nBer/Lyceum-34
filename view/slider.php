@@ -11,8 +11,7 @@
 <div class="slider">
       <div class="slider__wrapper">
         <div class="slider__items">
-        <?php 
-        foreach ($slides as $s): ?>
+        <?php foreach ($slides as $s): ?>
           <div class="slider__item">
             <div class="slider_background">
                   <img id="slide_img" src="../img/preview/<?=$s['back']?>" alt=""></div>

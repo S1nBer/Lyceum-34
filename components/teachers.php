@@ -28,6 +28,18 @@ require_once '../components/navbar.php';
          <option value="0">Классные руководители</option>
         </select>
         </form>
+        <?php
+        if(isset($category)){
+                if($category != 0){
+                        $group = category($link, $category);
+                        echo '<h2>' .$group['category']. '</h2>';
+                }
+                else{
+                        echo '<h2>Классные руководители</h2>';
+                }
+        }
+        ?>
+        <br><br>
         <div class="teachers_of_category">
         <?php
          if (isset($teachers))

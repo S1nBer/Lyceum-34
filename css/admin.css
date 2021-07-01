@@ -36,3 +36,8 @@ body {
 .blocks li{
    margin-top: 10px;
 }
+
+.photo_of_teacher, .preview{
+   width: 100px;
+}
+

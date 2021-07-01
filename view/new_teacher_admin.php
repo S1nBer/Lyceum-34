@@ -31,7 +31,7 @@ include_once('../models/ped_team.php');
    </label></p>
    <p><label>
    Об учителе: <br>
-   <textarea class="form-item" id="text" name="content" required></textarea>
+   <textarea class="form-item" id="text" name="content"></textarea>
    </label></p>
    <p><label>
    Прикрепите фотографию: <br>
@@ -54,7 +54,6 @@ tinymce.init({
   ],
   toolbar: 'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
   content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }',
-  language_url : '../scripts/ru.js',
 });
   </script>
 </body>

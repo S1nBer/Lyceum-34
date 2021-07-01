@@ -23,9 +23,10 @@
          $sections=sections_all($link);
          include("../view/sections.php");
          ?>
+         <li><a href="../components/ped_team.php">Педколлектив</a></li>
          <li><a target="_blank" href="https://cabinet.ruobr.ru/login/?next=/child/studies/mark_table/">Электронный дневник</a></li>
       <li><div class="button">
-         <a href="#?hi=hi" id="specialButton" title="Версия сайта для слабовидящих">
+         <a href="#" id="specialButton" title="Версия сайта для слабовидящих">
             <img class="eye" src="../img/eye.png"></a>
       </div></li>
       </ul>

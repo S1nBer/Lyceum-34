@@ -1,7 +1,7 @@
 <?php 
 foreach($sections as $s): 
 if($s['type'] == "many"){
-   echo '<li><a href="#">' .$s['title']. '</a>';
+   echo '<li><a href="#">' .$s['title']. '<img class="arrow" src="../img/arrow down.png"></a>';
    $subsections = subsections_all($link, $s['id']);
       echo '<ul class="submenu">';
          foreach($subsections as $sub):
