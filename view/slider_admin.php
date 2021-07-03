@@ -24,10 +24,11 @@
          <tr>
          <td><?=$s['title']?></td>
          <td> <a href="slider_panel.php?action=edit&id=<?=$s['id']?>">Редактировать</a></td>
-         <td> <a href="slider_panel.php?action=delete&id=<?=$s['id']?>">Удалить</a></td>
+         <td> <a href="slider_panel.php?action=delete&id=<?=$s['id']?>" onclick="return confirm_alert(this);">Удалить</a></td>
          </tr>
          <?php endforeach ?>
          </table>
          </div>
 </body>
+<script src="../scripts/alert.js"></script>
 </html>

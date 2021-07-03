@@ -25,7 +25,7 @@ include_once('../models/news.php');
    </label></p>
    <p><label>
    Дата: <br>
-   <input type="date" name="date" value="<?=$article['date']?>" class="form-item" required>
+   <input type="date" name="date" value="<?=date("Y-m-d")?>" class="form-item" required>
    </label></p>
    <p><label>
    Содержание: <br>

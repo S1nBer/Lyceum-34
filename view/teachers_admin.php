@@ -32,4 +32,5 @@
          ?>
          </div>
 </body>
+<script src="../scripts/alert.js"></script>
 </html>

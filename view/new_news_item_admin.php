@@ -15,8 +15,9 @@
 </head>
 <body>
 <?php
-include_once('../models/news.php'); 
+include_once('../models/news.php');
 ?>
+  
    <div class="admin_panel">
    <form method="post" action="news_panel.php?action=add&location=<?=$location?>" enctype="multipart/form-data">
    <p><label>
@@ -25,7 +26,7 @@ include_once('../models/news.php');
    </label></p>
    <p><label>
    Дата: <br>
-   <input type="date" name="date" value="" class="form-item" required>
+   <input type="date" name="date" value="<?=date("Y-m-d")?>" class="form-item" required>
    </label></p>
    <p><label>
    Содержание: <br>

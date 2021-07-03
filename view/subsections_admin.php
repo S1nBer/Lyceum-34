@@ -24,10 +24,11 @@
          <tr>
          <td><?=$s['title']?></td>
          <td> <a href="navbar_panel.php?action=edit&subaction=edit&id_sub=<?=$s['id']?>&id=<?=$s['ind']?>&type=<?=$type?>">Редактировать</a></td>
-         <td> <a href="navbar_panel.php?action=edit&subaction=delete&type=<?=$type?>&id_sub=<?=$s['id']?>&id=<?=$s['ind']?>">Удалить</a></td>
+         <td> <a href="navbar_panel.php?action=edit&subaction=delete&type=<?=$type?>&id_sub=<?=$s['id']?>&id=<?=$s['ind']?>" onclick="return confirm_alert(this);">Удалить</a></td>
          </tr>
          <?php endforeach ?>
          </table>
          </div>
 </body>
+<script src="../scripts/alert.js"></script>
 </html>

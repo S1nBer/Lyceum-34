@@ -15,8 +15,6 @@
          <li><img class="logo" src="../img/logo.png" alt="Логотип Лицея"></li>
          <li><a class="news" id="sections" href="index.php">Новости</a></li>
          <?php
-         if(isset($_GET['hi']))
-         echo $_GET['hi'];
          require_once '../database.php';
          require_once '../models/navbar.php';
          $link=db_connect();

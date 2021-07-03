@@ -28,10 +28,11 @@
          <td><?=$a['date']?></td>
          <td><?=$a['title']?></td>
          <td> <a href="news_panel.php?action=edit&id=<?=$a['id']?>&location=<?=$location?>">Редактировать</a></td>
-         <td> <a href="news_panel.php?action=delete&id=<?=$a['id']?>&location=<?=$location?>">Удалить</a></td>
+         <td> <a href="news_panel.php?action=delete&id=<?=$a['id']?>&location=<?=$location?>" onclick="return confirm_alert(this);">Удалить</a></td>
          </tr>
          <?php endforeach ?>
          </table>
          </div>
 </body>
+<script src="../scripts/alert.js"></script>
 </html>

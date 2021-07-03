@@ -13,7 +13,7 @@
          <img class="photo_of_teacher" width="100%" src="../img/teachers/<?=$t['photo']?>"></a></td>
          <td><?=$t['class']?></td>
          <td> <a href="ped_team_panel.php?action=edit&id=<?=$t['id_teach']?>">Редактировать</a></td>
-         <td> <a href="ped_team_panel.php?action=delete&id=<?=$t['id_teach']?>">Удалить</a></td>
+         <td> <a href="ped_team_panel.php?action=delete&id=<?=$t['id_teach']?>" onclick="return confirm_alert(this);">Удалить</a></td>
          </tr>
          <?php endforeach ?>
          </table>
